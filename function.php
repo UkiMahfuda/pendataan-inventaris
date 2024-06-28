@@ -2,7 +2,7 @@
 session_start();
 
 //membuat koneksi ke database
-$conn = mysqli_connect("localhost","root", "","inventaris");
+$conn = mysqli_connect("localhost:3307","root", "","db_inventaris");
 
 
 //menambah barang baru

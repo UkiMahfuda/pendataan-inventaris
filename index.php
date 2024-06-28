@@ -60,7 +60,7 @@ require 'cek.php';
                                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
                                     Tambah Barang
                                 </button>
-                                <a href ="export.php" class="btn btn-info">Export Data</a>
+                                <a target="_blank" href ="export.php" class="btn btn-info">Export Data</a>
                             </div>
                             <div class="card-body">
 
@@ -86,7 +86,6 @@ require 'cek.php';
                                                 <th>Nama Barang</th>
                                                 <th>Deskripsi</th>
                                                 <th>Stock</th>
-                                                <th>Barcode</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
@@ -108,9 +107,7 @@ require 'cek.php';
                                                 <td><?=$namabarang;?></td>
                                                 <td><?=$deskripsi;?></td>
                                                 <td><?=$stock;?></td>
-                                                <td>
-                                                    <img alt="barcode.png" src="barcode.php?codetype=code128&size=40&text=testing&print=true" />                                                   
-                                                </td>
+                                              
                                                 <td>
                                                     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#edit<?=$idb;?>">
                                                         Edit
